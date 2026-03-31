@@ -61,10 +61,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="navbar-center">
-            <a
-              href="/circles"
-              className="btn btn-ghost text-xl font-Hachi_Maru_Pop"
-            >
+            <a href="/circles" className="btn btn-ghost text-xl">
               サークル一覧
             </a>
           </div>
