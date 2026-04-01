@@ -110,7 +110,7 @@ export default function RootLayout({
             <Link className="link link-hover" href="/circles">
               サークル一覧
             </Link>
-            <a className="link link-hover">サークル性の方</a>
+            <a className="link link-hover">サークル生の方</a>
           </nav>
           <nav>
             <h6 className="footer-title">Univercity</h6>
