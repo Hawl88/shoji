@@ -12,10 +12,10 @@ export default function Page() {
         {circleInfos.map((circleInfo) => (
           <div
             key={circleInfo.circleName}
-            className="card imgSrc-full w-80 shadow-xl mx-auto m-8"
+            className="imgSrc-full card m-8 mx-auto w-80 shadow-xl"
           >
             <figure>
-              // todo: use next/image instead of img
+              {/* todo: use next/image instead of img */}
               <img src={circleInfo.imgSrc} alt="circle image" />
             </figure>
             <div className="card-body bg-black/40">
