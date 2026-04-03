@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { circleInfos } from "./circles";
+import { clubInfos } from "./clubs";
 
 export const dynamic = "error";
 export const revalidate = false;
@@ -7,7 +8,32 @@ export const revalidate = false;
 export default function Page() {
   return (
     <>
-      <h1 className="text-2xl">サークル一覧</h1>
+      <h1 style={{ fontSize: "50px" }}>部活動</h1>
+      <div className="flex flex-wrap">
+        {clubInfos.map((clubInfo) => (
+          <div
+            key={clubInfo.clubName}
+            className="image-full card m-8 mx-auto w-80 shadow-xl"
+          >
+            <figure>
+              {/* todo: use next/image instead of img */}
+              <img src={clubInfo.clubimgSrc} alt="circle image" />
+            </figure>
+            <div className="card-body bg-black/40">
+              <h2 className="card-title">
+                <Link href={`/circles/${clubInfo.clubName}`}>
+                  {clubInfo.clubName}
+                </Link>
+              </h2>
+              <p>{clubInfo.clubshortDescription}</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-neutral">詳細ページへ</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <h2 style={{ fontSize: "50px" }}>サークル</h2>
       <div className="flex flex-wrap">
         {circleInfos.map((circleInfo) => (
           <div
