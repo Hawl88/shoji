@@ -12,8 +12,8 @@ export const clubInfos: clubInfoInterface[] = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9k6R7WEg0vab1NtYtrSz1kfm6fWh_ecyPw&s",
   },
   {
-    clubName: "公式テニス部",
-    clubshortDescription: "公式じゃないのもやってます",
+    clubName: "硬式テニス部",
+    clubshortDescription: "硬式じゃないのもやってます",
     clubimgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3QoYoxBpx1jZ4_Xu4qSGegNgOoK7WTMJbw&s",
   },
