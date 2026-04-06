@@ -8,7 +8,7 @@ export const revalidate = false;
 export default function Page() {
   return (
     <>
-      <h1 style={{ fontSize: "50px" }}>部活動</h1>
+      <div className="my-10 text-center text-5xl font-medium">部活動</div>
       <div className="flex flex-wrap">
         {clubInfos.map((clubInfo) => (
           <div
@@ -19,7 +19,7 @@ export default function Page() {
               {/* todo: use next/image instead of img */}
               <img src={clubInfo.clubimgSrc} alt="circle image" />
             </figure>
-            <div className="card-body bg-black/40">
+            <div className="card-body bg-black/15">
               <h2 className="card-title">
                 <Link href={`/circles/${clubInfo.clubName}`}>
                   {clubInfo.clubName}
@@ -33,7 +33,7 @@ export default function Page() {
           </div>
         ))}
       </div>
-      <h2 style={{ fontSize: "50px" }}>サークル</h2>
+      <div className="my-10 text-center text-5xl font-medium">サークル</div>
       <div className="flex flex-wrap">
         {circleInfos.map((circleInfo) => (
           <div
@@ -44,7 +44,7 @@ export default function Page() {
               {/* todo: use next/image instead of img */}
               <img src={circleInfo.imgSrc} alt="circle image" />
             </figure>
-            <div className="card-body bg-black/40">
+            <div className="card-body bg-black/15">
               <h2 className="card-title">
                 <Link href={`/circles/${circleInfo.circleName}`}>
                   {circleInfo.circleName}

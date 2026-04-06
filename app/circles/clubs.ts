@@ -49,7 +49,7 @@ export const clubInfos: clubInfoInterface[] = [
   },
   {
     clubName: "バドミントン部",
-    clubshortDescription: "あの羽意外と高いんすよ",
+    clubshortDescription: "羽の値段高すぎ",
     clubimgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnAPR1giZHEuQYVgWVf9CePCW7Z4aXwC8QTQ&s",
   },
