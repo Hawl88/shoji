@@ -9,7 +9,9 @@ export const revalidate = false;
 export default function Page() {
   return (
     <>
-      <div className="my-10 text-center text-5xl font-medium">部活動</div>
+      <div className="my-10 text-center text-5xl font-medium text-red-600">
+        部活動
+      </div>
       <div className="flex flex-wrap">
         {clubInfos.map((clubInfo) => (
           <div
@@ -20,7 +22,7 @@ export default function Page() {
               {/* todo: use next/image instead of img */}
               <img src={clubInfo.clubimgSrc} alt="circle image" />
             </figure>
-            <div className="card-body bg-black/15">
+            <div className="card-body rounded-2xl bg-black/15">
               <h2 className="card-title">
                 <Link href={`/circles/${clubInfo.clubName}`}>
                   {clubInfo.clubName}
@@ -34,7 +36,9 @@ export default function Page() {
           </div>
         ))}
       </div>
-      <div className="my-10 text-center text-5xl font-medium">サークル</div>
+      <div className="my-10 text-center text-5xl font-medium text-blue-600">
+        サークル
+      </div>
       <div className="flex flex-wrap">
         {circleInfos.map((circleInfo) => (
           <div
@@ -45,7 +49,7 @@ export default function Page() {
               {/* todo: use next/image instead of img */}
               <img src={circleInfo.imgSrc} alt="circle image" />
             </figure>
-            <div className="card-body bg-black/15">
+            <div className="card-body rounded-2xl bg-black/15">
               <h2 className="card-title">
                 <Link href={`/circles/${circleInfo.circleName}`}>
                   {circleInfo.circleName}
@@ -59,7 +63,9 @@ export default function Page() {
           </div>
         ))}
       </div>
-      <div className="my-10 text-center text-5xl font-medium">学生会</div>
+      <div className="my-10 text-center text-5xl font-medium text-green-600">
+        学生会
+      </div>
       <div className="flex flex-wrap">
         {committeeInfos.map((committeeInfo) => (
           <div
@@ -70,7 +76,7 @@ export default function Page() {
               {/* todo: use next/image instead of img */}
               <img src={committeeInfo.imgSrc} alt="circle image" />
             </figure>
-            <div className="card-body bg-black/15">
+            <div className="card-body rounded-2xl bg-black/15">
               <h2 className="card-title">
                 <Link href={`/circles/${committeeInfo.committeeName}`}>
                   {committeeInfo.committeeName}

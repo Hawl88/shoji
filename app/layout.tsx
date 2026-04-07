@@ -62,7 +62,7 @@ export default function RootLayout({
           </div>
           <div className="navbar-center">
             <Link href="/circles" className="btn text-xl btn-ghost">
-              サークル一覧
+              活動一覧
             </Link>
           </div>
           <div className="navbar-end">
@@ -98,7 +98,10 @@ export default function RootLayout({
                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                   />
                 </svg>
-                <span className="indicator-item badge badge-xs badge-primary"></span>
+                <span className="relative flex size-3">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                  <span className="relative inline-flex size-2 rounded-full bg-sky-500"></span>
+                </span>
               </div>
             </button>
           </div>
