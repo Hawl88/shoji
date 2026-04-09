@@ -9,7 +9,7 @@ export const revalidate = false;
 export default function Page() {
   return (
     <>
-      <div className="my-10 text-center text-5xl font-medium text-red-600">
+      <div id="club" className="my-10 text-center text-5xl font-medium text-red-600">
         部活動
       </div>
       <div className="flex flex-wrap">
@@ -36,7 +36,7 @@ export default function Page() {
           </div>
         ))}
       </div>
-      <div className="my-10 text-center text-5xl font-medium text-blue-600">
+      <div id="circle" className="my-10 text-center text-5xl font-medium text-blue-600">
         サークル
       </div>
       <div className="flex flex-wrap">
@@ -63,7 +63,7 @@ export default function Page() {
           </div>
         ))}
       </div>
-      <div className="my-10 text-center text-5xl font-medium text-green-600">
+      <div id="committee" className="my-10 text-center text-5xl font-medium text-green-600">
         学生会
       </div>
       <div className="flex flex-wrap">

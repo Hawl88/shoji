@@ -49,13 +49,13 @@ export default function RootLayout({
                 className="dropdown-content menu z-1 mt-3 w-52 menu-sm rounded-box bg-base-100 p-2 shadow-sm"
               >
                 <li>
-                  <a>ホーム</a>
+                  <a href="#club">部活</a>
                 </li>
                 <li>
-                  <a>運営</a>
+                  <a href="#circle">サークル</a>
                 </li>
                 <li>
-                  <a>質問</a>
+                  <a href="#committee">生徒会</a>
                 </li>
               </ul>
             </div>
