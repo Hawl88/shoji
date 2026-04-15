@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import { Hachi_Maru_Pop } from "next/font/google";
 import Link from "next/link";
 
@@ -15,13 +14,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className={`h-full antialiased ` + font.className}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`h-full antialiased ` + font.className}
+    >
       <body className="flex min-h-full flex-col">
-        <header className="navbar bg-base-100 shadow-sm">
+        <header className="navbar sticky top-0 z-50 bg-base-100 shadow-sm">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -62,25 +65,12 @@ export default function RootLayout({
           </div>
           <div className="navbar-center">
             <Link href="/circles" className="btn text-xl btn-ghost">
-              活動一覧
+              活 動 一 覧
             </Link>
           </div>
           <div className="navbar-end">
             <button className="btn btn-circle btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
+              <div className="indicator">...</div>
             </button>
             <button className="btn btn-circle btn-ghost">
               <div className="indicator">
